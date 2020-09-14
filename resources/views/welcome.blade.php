@@ -67,6 +67,14 @@
                 font-size: 22px;
                 color: red;
             }
+
+            .top-right > a:nth-of-type(3) {
+                border-radius: 5px;
+                background-color: #4267b2;
+                font-size: 18px;
+                color: white;
+                padding: 0.5rem 1rem;
+            }
         </style>
     </head>
     <body>
@@ -78,6 +86,7 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('fb-login') }}">Login By Facebook</a>
                     @endauth
                 </div>
             @endif

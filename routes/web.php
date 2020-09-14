@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user/auth/fb-login', 'UserAuthController@fbLogin')->name('fb-login');
+Route::get('/user/auth/fb-login-callback', 'UserAuthController@fbLoginCallback');
