@@ -10,6 +10,6 @@ class Horoscope extends Model
      * @var array
      */
     protected $fillable = [
-        'date', 'zodiac', 'entirety', 'love', 'work', 'wealth'
+        'date', 'zodiac', 'entirety_rank', 'entirety', 'love_rank', 'love', 'work_rank', 'work', 'wealth_rank', 'wealth'
     ];
 }
