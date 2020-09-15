@@ -40,7 +40,7 @@ class UserAuthController extends Controller
         }
         
         if (empty($user)) {
-            $user = firstOrCreate(
+            $user = User::firstOrCreate(
                 ['facebook_id' => $fbUser->id],
                 ['facebook_id' => $fbUser->id, 'name' => $fbUser->name, 'email' => $fbUser->email, 'password' => uniqid()]
             );
