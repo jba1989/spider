@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('DailyHoroscopes:get')->daily()->hourly();
+        $schedule->command('DailyHoroscopes:get')->hourly();
     }
 
     /**

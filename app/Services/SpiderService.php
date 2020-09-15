@@ -45,6 +45,7 @@ class SpiderService {
                     'wealth' => str_replace(["\r, \n, \r\n"], '', trim($wealthMatchs[2])),
                 ],
             );
+            Log::info($zodiac . ' done.');
         } catch (Exception $e) {
             Log::error(sprintf(
                 "file: %s, function: %s, index: %d, message: %s",
